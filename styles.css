@@ -528,7 +528,8 @@ ul { list-style: none; }
 
 /* ===== SKETCH GALLERY ===== */
 .sketch-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
-.sketch-gallery img { width: 100%; border-radius: 12px; aspect-ratio: 4/3; object-fit: cover; }
+.sketch-gallery img { width: 100%; border-radius: 12px; aspect-ratio: 4/3; object-fit: cover; background: #2a2b33; display: block; min-height: 160px; }
+.sketch-gallery img[alt] { color: transparent; }
 .sketch-more-link { text-align: center; margin-top: 8px; }
 .sketch-more-link a { font-size: .9rem; color: #ef4444; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
 .sketch-more-link a:hover { opacity: .8; }
