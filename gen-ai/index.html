@@ -168,76 +168,367 @@
     <div class="section-block" id="curriculum">
       <div class="container">
         <div class="curriculum-header">
-          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큘럼</h2>
-          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%EC%83%9D%EC%84%B1%ED%98%95AI.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>상세 커리큘럼 다운로드</a>
+          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큐럼</h2>
+          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%EC%83%9D%EC%84%B1%ED%98%95AI.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            상세 커리큐럼 다운로드
+          </a>
         </div>
-        <div class="curriculum-phase-list">
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">1단계 | 생성형 AI 기초 및 환경 구축</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body open" style="display:block">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">오리엔테이션: 과정 목표와 방향성 탐색</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">Python 및 AI 개발 환경 구축</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">LLM 기초 이론 및 프롬프트 엔지니어링</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">오픈소스 LLM 활용 및 API 연동</span></div></div>
+        <div class="curriculum-grid">
+          <div class="curriculum-column left-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="true">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">1개월</span>
+                    <span class="curriculum-title">기초 이론과 실무 프로세스 학습</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:block">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">오리엔테이션</span>
+                    <span class="curriculum-content-desc">과정 목표와 방향성을 설명하고, 상세 커리큘럼 및 학습 일정 소개합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">생성형 AI 개요 & LLM</span>
+                    <span class="curriculum-content-desc">생성형 AI 역사와 LLM(GPT, BERT 등) 개념 이해, 토큰화 및 임베딩 기법, 전이학습과 파인튜닝 개요를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">파인튜닝</span>
+                    <span class="curriculum-content-desc">데이터 준비 및 라벨링, 하이퍼파라미터 최적화, 전이학습 기반 성능 향상과 다양한 프롬프트 구조를 실습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">오픈소스 LLM 활용</span>
+                    <span class="curriculum-content-desc">Hugging Face Transformers를 활용한 모델 서빙 및 API 배포 실습과 모델 경량화, 커뮤니티 오픈소스 프로젝트 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프롬프트 엔지니어링</span>
+                    <span class="curriculum-content-desc">프롬프트 템플릿 설계, 조건부 생성, 체인 오브 싱크 기법, 상황별 활용 사례 연구 및 품질 개선 피드백 루프 기법을 분석합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">LLM 성능 평가</span>
+                    <span class="curriculum-content-desc">BLEU, ROUGE, METEOR 등 LLM 평가 지표와 퍼플렉시티, 로스 기반 모델 비교, 실제 서비스 환경에서의 성능 테스트를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">2단계 | RAG 아키텍처 및 파인튜닝</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">RAG 구성, 벡터 DB, LLM 파인튜닝 실습</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">2개월</span>
+                    <span class="curriculum-title">고급 기술과 전문 개발 응용</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">생성형 AI 응용 애플리케이션 개발</span>
+                    <span class="curriculum-content-desc">챗봇, 요약, 번역 등 다양한 응용 사례 설계, 멀티모달 모델 결합 가능성 탐색, 실시간 API 제공, 사용자 피드백 수집 및 개선 사이클을 운영합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">최신 생성형 AI 기술</span>
+                    <span class="curriculum-content-desc">In-Context Learning과 Zero/Few-shot 기법, RAG 트렌드, 대규모 파라미터 스케일링 및 모델 압축(Quantization, Pruning) 사례를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">LLM 데이터 준비 및 전처리</span>
+                    <span class="curriculum-content-desc">코퍼스 수집, 클리닝 프로세스, 토큰화와 어휘 사전 구성, 데이터 증강(Augmentation) 기법, 분산 환경에서 대규모 데이터 처리 방식을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강1</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">생성형 AI 파이프라인을 구축하고 간단한 LLM 모델을 파인튜닝하여 다양한 응용 사례를 학습합니다. 프롬프트 엔지니어링을 실습하며 모델 성능을 검증하고, MLOps를 도입하여 자동화된 배포 환경을 구성합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">3단계 | 기본 프로젝트 시작</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">AI 서비스 기획 및 기본 기능 구현</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">3개월</span>
+                    <span class="curriculum-title">기본 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">생성형 AI 파이프라인을 구축하고 간단한 LLM 모델을 파인튜닝하여 다양한 응용 사례를 학습합니다. 프롬프트 엔지니어링을 실습하며 모델 성능을 검증하고, MLOps를 도입하여 자동화된 배포 환경을 구성합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">대규모 오픈소스 LLM 활용과 커스텀 파인튜닝을 통해 멀티모달 데이터를 통합하고 복합 생성형 AI 서비스를 설계합니다. 모델 성능 평가 및 모니터링을 통해 최적화 전략을 습득하며 팀 기반 협업으로 완성도 있는 AI 서비스를 개발합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강2</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">4단계 | 심화 프로젝트</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">멀티모달 AI, 에이전트 기반 시스템 개발</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">4개월</span>
+                    <span class="curriculum-title">심화 프로젝트 시작 및 해커톤</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">대규모 오픈소스 LLM 활용과 커스텀 파인튜닝을 통해 멀티모달 데이터를 통합하고 복합 생성형 AI 서비스를 설계합니다. 모델 성능 평가 및 모니터링을 통해 최적화 전략을 습득하며 팀 기반 협업으로 완성도 있는 AI 서비스를 개발합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">해커톤</span>
+                    <span class="curriculum-content-desc">제한된 시간 내 팀별 아이디어 구상과 제품 설계를 진행하며 집중적인 협업을 통해 창의적 해결능력을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강3</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">5단계 | 실무 통합 프로젝트 집중 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">실무 수준 AI 서비스 개발, 현직자 멘토링</span></div></div>
+          </div>
+          <div class="curriculum-column right-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">5개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">클라우드, 보안, 디자인 등 타 과정과 협업하여 최신 생성형 AI 기술을 결합한 고급 솔루션을 구현합니다. 고가용성과 확장성을 고려한 클라우드 운영을 통해 실시간 서비스와 유지보수 체계를 완성하며 실제 현장에서의 활용 역량을 증대시킵니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강4</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">커리어 성장 전략</span>
+                    <span class="curriculum-content-desc">개인 목표와 학습 로드맵을 설계하며 전문가 멘토링과 네트워크 확장 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">협업 및 커뮤니케이션</span>
+                    <span class="curriculum-content-desc">팀워크를 강화하는 커뮤니케이션 전략과 갈등 해결 기법을 실습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">6단계 | AI 서비스 배포 및 운영</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">AI 서비스 클라우드 배포 및 모니터링</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">6개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 집중 개발</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">클라우드, 보안, 디자인 등 타 과정과 협업하여 최신 생성형 AI 기술을 결합한 고급 솔루션을 구현합니다. 고가용성과 확장성을 고려한 클라우드 운영을 통해 실시간 서비스와 유지보수 체계를 완성하며 실제 현장에서의 활용 역량을 증대시킵니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강5</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 개발 프로세스와 문화</span>
+                    <span class="curriculum-content-desc">애자일 환경에서 제품 아이디어 발굴부터 시장 출시까지의 과정을 이해하며 사례 중심으로 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">포트폴리오 기획 및 구성</span>
+                    <span class="curriculum-content-desc">개인 역량과 기술을 구성하는 효과적인 포트폴리오 설계와 성공 사례를 분석합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">7단계 | 프로젝트 마무리, 최종 발표 및 수료</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">프로젝트 최종 완성, 발표 및 수료식</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">7개월</span>
+                    <span class="curriculum-title">프로젝트 마무리, 최종 발표 및 수료</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">클라우드, 보안, 디자인 등 타 과정과 협업하여 최신 생성형 AI 기술을 결합한 고급 솔루션을 구현합니다. 고가용성과 확장성을 고려한 클라우드 운영을 통해 실시간 서비스와 유지보수 체계를 완성하며 실제 현장에서의 활용 역량을 증대시킵니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강6</span>
+                    <span class="curriculum-content-desc">기업 연사 또는 전문가를 초빙하여 사이버 보안 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">이력서 작성 및 자기 PR</span>
+                    <span class="curriculum-content-desc">이력서를 통해 강점을 부각시키고 자기 PR 전략을 활용하여 자신을 효과적으로 표현하는 방법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프로젝트 발표회</span>
+                    <span class="curriculum-content-desc">프로젝트의 결과물을 발표하고, 심사위원과 현직자로부터 피드백을 받아 전체적인 성과와 구현 과정을 평가받습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">수료식</span>
+                    <span class="curriculum-content-desc">7개월 간의 학습과 프로젝트를 마무리하며, 수료식을 통해 교육 과정에 대한 회고와 향후 계획을 공유합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -359,7 +650,7 @@
       </div>
       <div class="container">
         <div class="sketch-more-link">
-          <a href="https://ktcloud-techup.com" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
+          <a href="https://ktcloud-techup-cohort1-outcomes.pages.dev/" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
         </div>
       </div>
     </div>

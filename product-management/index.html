@@ -168,75 +168,367 @@
     <div class="section-block" id="curriculum">
       <div class="container">
         <div class="curriculum-header">
-          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큘럼</h2>
-          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%ED%94%84%EB%A1%9C%EB%8D%95%ED%8A%B8%EB%A7%A4%EB%8B%88%EC%A7%80%EB%A8%BC%ED%8A%B8.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>상세 커리큘럼 다운로드</a>
+          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큐럼</h2>
+          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%ED%94%84%EB%A1%9C%EB%8D%95%ED%8A%B8%EB%A7%A4%EB%8B%88%EC%A7%80%EB%A8%BC%ED%8A%B8.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            상세 커리큐럼 다운로드
+          </a>
         </div>
-        <div class="curriculum-phase-list">
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">1단계 | PM 기초 및 제품 전략</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body open" style="display:block">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">오리엔테이션: 과정 목표와 방향성 탐색</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">제품 로드맵 수립 및 우선순위 설정</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">고객 중심 사고와 시장 분석 방법론</span></div></div>
+        <div class="curriculum-grid">
+          <div class="curriculum-column left-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="true">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">1개월</span>
+                    <span class="curriculum-title">제품 기획 및 데이터 기반 운영</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:block">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">오리엔테이션</span>
+                    <span class="curriculum-content-desc">과정 목표와 방향성을 설명하고, 상세 커리큘럼 및 학습 일정 소개합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 기획, 관리</span>
+                    <span class="curriculum-content-desc">제품 라이프사이클 개념, 시장 조사 방법론, KPI 설정 및 분석, 사용자 페르소나와 스토리보드 설계, 출시 전략 수립과 리스크 관리를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 개발 프로세스 관리</span>
+                    <span class="curriculum-content-desc">요구사항 정의에서 출시까지의 단계별 산출물 작성, 품질 관리, 워크플로우 자동화 도구 활용 및 프로세스 개선과 최적화를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">업무 관리 및 에자일 방법론</span>
+                    <span class="curriculum-content-desc">스프린트, 칸반, 스크럼 등 에자일 방법론 적용 사례와 분산 팀 운영, 커뮤니케이션 전략, 회고 문화 정착 및 생산성 분석 기법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">AI 활용 기획 도구</span>
+                    <span class="curriculum-content-desc">ChatGPT 등 AI 모델을 활용한 요구사항 분석 자동화, 일정 예측 및 리소스 배분, 프롬프트 엔지니어링, AI를 활용한 의사결정 지원 사례를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">데이터 분석을 통한 제품 선정</span>
+                    <span class="curriculum-content-desc">고객 세분화, 시장 트렌드 분석, A/B 테스트, 데이터 시각화와 인사이트 도출 방법, 데이터 기반의 전략적 제품 선정과 의사결정을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">2단계 | 데이터 분석 및 의사결정</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">데이터 분석 도구 활용 및 인사이트 도출, KPI 설정</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">2개월</span>
+                    <span class="curriculum-title">제품 관리 전략 및 최신 트렌드</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">최신 제품 개발 방법론</span>
+                    <span class="curriculum-content-desc">Lean Startup, Design Thinking을 활용한 현대적 개발 접근법, MVP 설계, 유연한 프로세스 구축과 팀 구성 및 역할 분담 사례를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">최신 PM/PO 트렌드</span>
+                    <span class="curriculum-content-desc">글로벌 기업의 PM/PO 조직 변화, OKR 기반 목표 설정, 리모트/하이브리드 근무 환경 적응, 협업 플랫폼 생태계와 에코시스템 사례를 분석합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">고객 분석 및 요구사항 관리</span>
+                    <span class="curriculum-content-desc">고객 여정 맵 활용, VOC 수집/분석 도구 적용, 요구사항 우선순위 설정(MoSCoW), 변경 요청 관리와 버전 컨트롤 프로세스를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강1</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">제품 기획과 개발 프로세스를 탐구하며 에자일 방법론을 활용한 프로젝트 설계를 실습합니다. 생성형 AI를 업무 보조 도구로 활용하며 보고 체계를 구축하고, 간단한 데이터 분석으로 제품 가설을 검증합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">3단계 | 기본 프로젝트 시작</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">제품 기획 및 스펙 문서 작성, 로드맵 수립</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">3개월</span>
+                    <span class="curriculum-title">기본 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">제품 기획과 개발 프로세스를 탐구하며 에자일 방법론을 활용한 프로젝트 설계를 실습합니다. 생성형 AI를 업무 보조 도구로 활용하며 보고 체계를 구축하고, 간단한 데이터 분석으로 제품 가설을 검증합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">확장된 에자일 프로세스와 고급 관리 기법을 적용하여 대규모 데이터 분석 및 MVP 검증을 진행합니다. AI 기반 의사결정 지원 시스템을 설계하고, 팀 협업을 통해 종합적인 제품 로드맵을 수립하여 복합적인 관리 경험을 쌓습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강2</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">4단계 | 애자일 방법론</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">스프린트 계획, 백로그 관리, 스크럼 프로세스 실습</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">4개월</span>
+                    <span class="curriculum-title">심화 프로젝트 시작 및 해커톤</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">확장된 에자일 프로세스와 고급 관리 기법을 적용하여 대규모 데이터 분석 및 MVP 검증을 진행합니다. AI 기반 의사결정 지원 시스템을 설계하고, 팀 협업을 통해 종합적인 제품 로드맵을 수립하여 복합적인 관리 경험을 쌓습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">해커톤</span>
+                    <span class="curriculum-content-desc">제한된 시간 내 팀별 아이디어 구상과 제품 설계를 진행하며 집중적인 협업을 통해 창의적 해결능력을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강3</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">5단계 | 실무 통합 프로젝트 집중 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">실무 수준 PM 프로젝트, 현직자 멘토링</span></div></div>
+          </div>
+          <div class="curriculum-column right-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">5개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">타 과정(개발, 디자인, 보안 등)과 협업하여 실제 제품 출시 프로세스를 경험하며 제품 라이프사이클 전 단계(아이디어~런칭)를 관리합니다. 운영 모니터링과 지속적인 개선 전략을 수립하여 실무 중심의 종합 솔루션을 완성합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강4</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">커리어 성장 전략</span>
+                    <span class="curriculum-content-desc">개인 목표와 학습 로드맵을 설계하며 전문가 멘토링과 네트워크 확장 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">협업 및 커뮤니케이션</span>
+                    <span class="curriculum-content-desc">팀워크를 강화하는 커뮤니케이션 전략과 갈등 해결 기법을 실습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">6단계 | AI 활용 PM</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">생성형 AI를 활용한 제품 기획 및 시장 분석 자동화</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">6개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 집중 개발</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">타 과정(개발, 디자인, 보안 등)과 협업하여 실제 제품 출시 프로세스를 경험하며 제품 라이프사이클 전 단계(아이디어~런칭)를 관리합니다. 운영 모니터링과 지속적인 개선 전략을 수립하여 실무 중심의 종합 솔루션을 완성합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강5</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 개발 프로세스와 문화</span>
+                    <span class="curriculum-content-desc">애자일 환경에서 제품 아이디어 발굴부터 시장 출시까지의 과정을 이해하며 사례 중심으로 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">포트폴리오 기획 및 구성</span>
+                    <span class="curriculum-content-desc">개인 역량과 기술을 구성하는 효과적인 포트폴리오 설계와 성공 사례를 분석합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">7단계 | 프로젝트 마무리, 최종 발표 및 수료</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">프로젝트 최종 완성, 발표 및 수료식</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">7개월</span>
+                    <span class="curriculum-title">프로젝트 마무리, 최종 발표 및 수료</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">타 과정(개발, 디자인, 보안 등)과 협업하여 실제 제품 출시 프로세스를 경험하며 제품 라이프사이클 전 단계(아이디어~런칭)를 관리합니다. 운영 모니터링과 지속적인 개선 전략을 수립하여 실무 중심의 종합 솔루션을 완성합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강6</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프로덕트 매니지먼트 관련 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">이력서 작성 및 자기 PR</span>
+                    <span class="curriculum-content-desc">이력서를 통해 강점을 부각시키고 자기 PR 전략을 활용하여 자신을 효과적으로 표현하는 방법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프로젝트 발표회</span>
+                    <span class="curriculum-content-desc">프로젝트의 결과물을 발표하고, 심사위원과 현직자로부터 피드백을 받아 전체적인 성과와 구현 과정을 평가받습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">수료식</span>
+                    <span class="curriculum-content-desc">7개월 간의 학습과 프로젝트를 마무리하며, 수료식을 통해 교육 과정에 대한 회고와 향후 계획을 공유합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -358,7 +650,7 @@
       </div>
       <div class="container">
         <div class="sketch-more-link">
-          <a href="https://ktcloud-techup.com" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
+          <a href="https://ktcloud-techup-cohort1-outcomes.pages.dev/" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
         </div>
       </div>
     </div>
