@@ -168,79 +168,367 @@
     <div class="section-block" id="curriculum">
       <div class="container">
         <div class="curriculum-header">
-          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큘럼</h2>
-          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>상세 커리큘럼 다운로드</a>
+          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큐럼</h2>
+          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A6%E1%86%AB%E1%84%83%E1%85%B3.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            상세 커리큐럼 다운로드
+          </a>
         </div>
-        <div class="curriculum-phase-list">
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">1단계 | 리액트 기반 UI 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body open" style="display:block">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">오리엔테이션: 과정 목표와 방향성 탐색, 상세 커리큘럼 및 학습 일정 소개</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">리액트 기초: Virtual DOM과 React 기초 개념 및 JSX 등 리액트 기본기를 학습합니다.</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">리액트 고급: 고급 상태 관리, 라우팅 등 심화 기능과 대규모 프로젝트 설계를 학습합니다.</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">디자인 시스템: 공통 UI 설계, 스타일 가이드, 애니메이션 및 협업 도구 활용법을 배웁니다.</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">생성형 AI를 활용한 프론트엔드 개발: AI API 연동, 프롬프트 엔지니어링 및 AI 기반 UI/UX 개선 방법을 익힙니다.</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">서버사이드 렌더링: SSR 프레임워크(Next.js) SEO, 데이터 패칭, 성능 최적화 기능을 습득합니다.</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">취업 준비 역량 테스트 대비: 매월 준비 방향 평가 및 피드백을 제공합니다.</span></div></div>
+        <div class="curriculum-grid">
+          <div class="curriculum-column left-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="true">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">1개월</span>
+                    <span class="curriculum-title">리액트 기반 UI 개발</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:block">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">오리엔테이션</span>
+                    <span class="curriculum-content-desc">과정 목표와 방향성을 설명하고, 상세 커리큘럼 및 학습 일정 소개합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">리액트 기초</span>
+                    <span class="curriculum-content-desc">Virtual DOM과 컴포넌트 구조, JSX 등 리액트 기본기를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">리액트 고급</span>
+                    <span class="curriculum-content-desc">고급 훅, 상태 관리, 라우팅 등 심화 기능과 대규모 프로젝트 설계를 익힙니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">디자인 시스템</span>
+                    <span class="curriculum-content-desc">공통 UI 설계, 스타일 가이드, 문서화 및 협업 도구 활용법을 배웁니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">생성형 AI를 활용한 프론트엔드 개발</span>
+                    <span class="curriculum-content-desc">AI API 연동, 프롬프트 엔지니어링 및 AI 기반 UX/UI 개선 방법을 익힙니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">서버사이드 렌더링</span>
+                    <span class="curriculum-content-desc">SSR 프레임워크와 SEO, 데이터 패칭, 성능 최적화 기법을 실습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">2단계 | 최신 프론트엔드 개발과 운영 전략</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">최신 프론트엔드 프레임워크 심화 학습 및 운영 전략</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">2개월</span>
+                    <span class="curriculum-title">최신 프론트엔드 개발과 운영 전략</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">최신 프론트엔드 기술</span>
+                    <span class="curriculum-content-desc">ES202X, TypeScript, 빌드\xb7번들링 및 최신 아키텍처를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프론트엔드 테스트/배포</span>
+                    <span class="curriculum-content-desc">테스트 전략, 자동화 배포, 실시간 모니터링 및 장애 대응 방안을 익힙니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">UI/UX 최적화</span>
+                    <span class="curriculum-content-desc">사용자 여정 분석, A/B 테스트, 접근성 및 일관성 있는 UX 개선을 실습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강1</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">React를 사용해 프론트엔드 아키텍처를 설계하며 UI 구성 및 상태 관리, 라우팅을 통합한 간단한 서비스 개발을 실습합니다. 자동화 배포(CI/CD)를 활용하여 코드 품질 관리를 학습하며 구조적인 프론트엔드 개발 능력을 배양합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">3단계 | 기본 프로젝트 시작</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">팀 구성 및 프로젝트 기획, 기본 기능 구현 시작</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">3개월</span>
+                    <span class="curriculum-title">기본 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">React를 사용해 프론트엔드 아키텍처를 설계하며 UI 구성 및 상태 관리, 라우팅을 통합한 간단한 서비스 개발을 실습합니다. 자동화 배포(CI/CD)를 활용하여 코드 품질 관리를 학습하며 구조적인 프론트엔드 개발 능력을 배양합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">디자인 시스템을 구축하고 SSR을 적용하여 프론트엔드 서비스를 고도화하며, 대규모 상태 관리를 통해 성능 최적화 전략을 수립합니다. 생성형 AI를 활용한 자동화 기능을 프로토타이핑하며 팀 협업을 통해 복합 SPA(싱글 페이지 애플리케이션)를 구현합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강2</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">4단계 | 심화 프로젝트 시작 및 마케팅</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">심화 프로젝트 시작, 성능 최적화 및 코드 품질 개선</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">4개월</span>
+                    <span class="curriculum-title">심화 프로젝트 시작 및 해커톤</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">디자인 시스템을 구축하고 SSR을 적용하여 프론트엔드 서비스를 고도화하며, 대규모 상태 관리를 통해 성능 최적화 전략을 수립합니다. 생성형 AI를 활용한 자동화 기능을 프로토타이핑하며 팀 협업을 통해 복합 SPA(싱글 페이지 애플리케이션)를 구현합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">해커톤</span>
+                    <span class="curriculum-content-desc">제한된 시간 내 팀별 아이디어 구상과 제품 설계를 진행하며 집중적인 협업을 통해 창의적 해결능력을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강3</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">5단계 | 실무 통합 프로젝트 집중 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">실무 수준 통합 프로젝트 집중 개발, 현직자 멘토링</span></div></div>
+          </div>
+          <div class="curriculum-column right-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">5개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">다양한 프레임워크와 라이브러리를 혼합하여 프론트엔드 서비스를 통합 설계하며, 서버사이드 렌더링과 AI 결합 기능을 구축합니다. 백엔드, 디자인 등 타 과정과 협업하여 완성된 제품을 개발하고, 실시간 배포, 모니터링, 테스트 자동화 체계를 구축합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강4</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">커리어 성장 전략</span>
+                    <span class="curriculum-content-desc">개인 목표와 학습 로드맵을 설계하며 전문가 멘토링과 네트워크 확장 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">협업 및 커뮤니케이션</span>
+                    <span class="curriculum-content-desc">팀워크를 강화하는 커뮤니케이션 전략과 갈등 해결 기법을 실습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">6단계 | 실무 통합 프로젝트 심층 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">서비스 완성도 고도화, 코드 리뷰 및 리팩토링</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">6개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 집중 개발</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">다양한 프레임워크와 라이브러리를 혼합하여 프론트엔드 서비스를 통합 설계하며, 서버사이드 렌더링과 AI 결합 기능을 구축합니다. 백엔드, 디자인 등 타 과정과 협업하여 완성된 제품을 개발하고, 실시간 배포, 모니터링, 테스트 자동화 체계를 구축합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강5</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 개발 프로세스와 문화</span>
+                    <span class="curriculum-content-desc">애자일 환경에서 제품 아이디어 발굴부터 시장 출시까지의 과정을 이해하며 사례 중심으로 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">포트폴리오 기획 및 구성</span>
+                    <span class="curriculum-content-desc">개인 역량과 기술을 구성하는 효과적인 포트폴리오 설계와 성공 사례를 분석합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">7단계 | 프로젝트 마무리, 최종 발표 및 수료</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">프로젝트 최종 완성, 발표 및 수료식</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">7개월</span>
+                    <span class="curriculum-title">프로젝트 마무리, 최종 발표 및 수료</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">다양한 프레임워크와 라이브러리를 혼합하여 프론트엔드 서비스를 통합 설계하며, 서버사이드 렌더링과 AI 결합 기능을 구축합니다. 백엔드, 디자인 등 타 과정과 협업하여 완성된 제품을 개발하고, 실시간 배포, 모니터링, 테스트 자동화 체계를 구축합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강6</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 프론트엔드 개발 사례와 과정에 필요한 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">이력서 작성 및 자기 PR</span>
+                    <span class="curriculum-content-desc">이력서를 통해 강점을 부각시키고 자기 PR 전략을 활용하여 자신을 효과적으로 표현하는 방법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프로젝트 발표회</span>
+                    <span class="curriculum-content-desc">프로젝트의 결과물을 발표하고, 심사위원과 현직자로부터 피드백을 받아 전체적인 성과와 구현 과정을 평가받습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">수료식</span>
+                    <span class="curriculum-content-desc">7개월 간의 학습과 프로젝트를 마무리하며, 수료식을 통해 교육 과정에 대한 회고와 향후 계획을 공유합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -362,7 +650,7 @@
       </div>
       <div class="container">
         <div class="sketch-more-link">
-          <a href="https://ktcloud-techup.com" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
+          <a href="https://ktcloud-techup-cohort1-outcomes.pages.dev/" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
         </div>
       </div>
     </div>

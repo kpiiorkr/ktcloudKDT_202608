@@ -433,6 +433,50 @@ ul { list-style: none; }
 }
 .curriculum-download:hover { background: rgba(255,255,255,.12); }
 
+/* ===== CURRICULUM GRID (month-based) ===== */
+.curriculum-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 40px; flex-wrap: wrap; gap: 16px;
+}
+.curriculum-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.curriculum-column { display: flex; flex-direction: column; gap: 12px; }
+.curriculum-card {
+  background: #16171c; border-radius: 12px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,.07);
+}
+.curriculum-card-header { width: 100%; }
+.curriculum-toggle-btn {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px; background: none; border: none; cursor: pointer; text-align: left;
+  color: #fff;
+}
+.curriculum-question-container { display: flex; flex-direction: column; gap: 4px; }
+.curriculum-week {
+  font-size: 12px; font-weight: 600; color: #4fc3f7;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.curriculum-title { font-size: 16px; font-weight: 600; color: #fff; }
+.curriculum-icon { flex-shrink: 0; color: rgba(255,255,255,.4); transition: transform .3s; }
+.curriculum-toggle-btn[aria-expanded="true"] .curriculum-icon { transform: rotate(180deg); }
+.curriculum-card-body { padding: 0 24px 20px; border-top: 1px solid rgba(255,255,255,.07); }
+.curriculum-item {
+  display: flex; gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.curriculum-item:last-child { border-bottom: none; }
+.curriculum-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: #4fc3f7;
+  margin-top: 6px; flex-shrink: 0;
+}
+.curriculum-content-title { display: block; font-size: 14px; font-weight: 600; color: #e0e0e0; margin-bottom: 4px; }
+.curriculum-content-desc { display: block; font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.5; }
+@media (max-width: 768px) {
+  .curriculum-grid { grid-template-columns: 1fr; }
+  .curriculum-header { flex-direction: column; align-items: flex-start; }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .courses-grid { grid-template-columns: repeat(2, 1fr); }

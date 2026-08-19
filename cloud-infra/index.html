@@ -168,75 +168,367 @@
     <div class="section-block" id="curriculum">
       <div class="container">
         <div class="curriculum-header">
-          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큘럼</h2>
-          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%9D%B8%ED%94%84%EB%9D%BC.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>상세 커리큘럼 다운로드</a>
+          <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큐럼</h2>
+          <a href="https://statics.goorm.io/ktcloud-techup/files/curriculums/v2/kt+cloud+TECH+UP_%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%84%8B%E1%85%AE%E1%84%83%E1%85%B3%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%91%E1%85%B3%E1%84%85%E1%85%A1.pdf" target="_blank" rel="noopener noreferrer" class="curriculum-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            상세 커리큐럼 다운로드
+          </a>
         </div>
-        <div class="curriculum-phase-list">
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">1단계 | 클라우드 인프라 기초</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body open" style="display:block">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">오리엔테이션: 과정 목표와 방향성 탐색</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">kt cloud 및 Azure 인프라 기본 개념</span></div>
-                <div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">네트워크 설계 및 가상화 기술</span></div></div>
+        <div class="curriculum-grid">
+          <div class="curriculum-column left-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="true">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">1개월</span>
+                    <span class="curriculum-title">클라우드 인프라 기초 및 구축</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:block">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">오리엔테이션</span>
+                    <span class="curriculum-content-desc">과정 목표와 방향성을 설명하고, 상세 커리큘럼 및 학습 일정 소개합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">클라우드 인프라 개요</span>
+                    <span class="curriculum-content-desc">클라우드 인프라의 개념과 구성 요소, 주요 서비스 모델을 배우고 실제 구축 사례를 분석합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">전통 인프라와 클라우드 통합 전략</span>
+                    <span class="curriculum-content-desc">온프레미스와 클라우드 통합 방법론과 하이브리드 클라우드 설계 원칙을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">Azure 클라우드 인프라 운영</span>
+                    <span class="curriculum-content-desc">Azure IaaS 기반 리소스 관리와 최적화 운영을 실습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">KT클라우드 인프라 운영</span>
+                    <span class="curriculum-content-desc">KT클라우드 서비스 구성, 관리 콘솔 활용, 및 고가용성 사례를 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">Infra as Code: Terraform & Ansible 실습</span>
+                    <span class="curriculum-content-desc">Terraform과 Ansible을 사용해 인프라 코드를 작성하고 자동화를 실습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">2단계 | IaC 및 자동화</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">Terraform, Ansible을 활용한 인프라 자동화 실습</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">2개월</span>
+                    <span class="curriculum-title">클라우드 인프라 심화 및 최적화</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">고가용성 및 재해 복구 설계</span>
+                    <span class="curriculum-content-desc">시스템 이중화 전략과 재해 복구 시나리오를 설계하고 분석합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">클라우드 인프라 비용 최적화 및 운영 자동화</span>
+                    <span class="curriculum-content-desc">비용 최적화와 리소스 운영 자동화를 위한 사례와 도구 활용법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">최신 인프라 기술 동향 및 혁신 사례</span>
+                    <span class="curriculum-content-desc">소프트웨어 정의 네트워킹(SDN) 및 최신 클라우드 혁신 기술 동향을 분석합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강1</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">클라우드 환경에서 IaaS 기반 인프라를 구축하고 자동화 도구를 활용한 운영 효율화 과정을 실습하며, 운영 원칙과 관리 기법을 학습합니다. Azure 및 KT클라우드 환경에서 인프라 성능을 평가하고 개선 방안을 도출하며 기본적인 실무 능력을 배양합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">3단계 | 기본 프로젝트 시작</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">인프라 설계 기획 및 기본 환경 구성</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">3개월</span>
+                    <span class="curriculum-title">기본 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">기본 프로젝트</span>
+                    <span class="curriculum-content-desc">클라우드 환경에서 IaaS 기반 인프라를 구축하고 자동화 도구를 활용한 운영 효율화 과정을 실습하며, 운영 원칙과 관리 기법을 학습합니다. Azure 및 KT클라우드 환경에서 인프라 성능을 평가하고 개선 방안을 도출하며 기본적인 실무 능력을 배양합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">고도화된 클라우드 운영 전략을 적용한 하이브리드 클라우드 환경의 고가용성 및 재해 복구 설계를 실습합니다. 운영 자동화와 비용 최적화 기술을 활용하며 팀 협업을 통해 실제 문제 해결 경험과 개선 역량을 기릅니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강2</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">4단계 | 멀티 클라우드 운영</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">하이브리드/멀티 클라우드 환경 구축 및 운영</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">4개월</span>
+                    <span class="curriculum-title">심화 프로젝트 시작 및 해커톤</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">심화 프로젝트</span>
+                    <span class="curriculum-content-desc">고도화된 클라우드 운영 전략을 적용한 하이브리드 클라우드 환경의 고가용성 및 재해 복구 설계를 실습합니다. 운영 자동화와 비용 최적화 기술을 활용하며 팀 협업을 통해 실제 문제 해결 경험과 개선 역량을 기릅니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">해커톤</span>
+                    <span class="curriculum-content-desc">제한된 시간 내 팀별 아이디어 구상과 제품 설계를 진행하며 집중적인 협업을 통해 창의적 해결능력을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강3</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">5단계 | 실무 통합 프로젝트 집중 개발</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">실무 수준 인프라 프로젝트 개발, 현직자 멘토링</span></div></div>
+          </div>
+          <div class="curriculum-column right-column">
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">5개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 시작</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">Azure, KT클라우드와 코드 기반 인프라 자동화 도구를 통합하여 복합 클라우드 인프라 솔루션을 구축합니다. 고가용성, 재해 복구 및 비용 관리 솔루션을 설계하며 타 과정과 협업하여 모든 요소가 결합된 통합 프로젝트를 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강4</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">커리어 성장 전략</span>
+                    <span class="curriculum-content-desc">개인 목표와 학습 로드맵을 설계하며 전문가 멘토링과 네트워크 확장 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">협업 및 커뮤니케이션</span>
+                    <span class="curriculum-content-desc">팀워크를 강화하는 커뮤니케이션 전략과 갈등 해결 기법을 실습합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">6단계 | 비용 최적화 및 운영 자동화</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">클라우드 비용 최적화, FinOps, 운영 자동화 전략</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">6개월</span>
+                    <span class="curriculum-title">실무 통합 프로젝트 집중 개발</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">Azure, KT클라우드와 코드 기반 인프라 자동화 도구를 통합하여 복합 클라우드 인프라 솔루션을 구축합니다. 고가용성, 재해 복구 및 비용 관리 솔루션을 설계하며 타 과정과 협업하여 모든 요소가 결합된 통합 프로젝트를 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강5</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">제품 개발 프로세스와 문화</span>
+                    <span class="curriculum-content-desc">애자일 환경에서 제품 아이디어 발굴부터 시장 출시까지의 과정을 이해하며 사례 중심으로 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">포트폴리오 기획 및 구성</span>
+                    <span class="curriculum-content-desc">개인 역량과 기술을 구성하는 효과적인 포트폴리오 설계와 성공 사례를 분석합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="phase-item">
-              <button class="phase-toggle" onclick="togglePhase(this)">
-                <span class="phase-toggle-title">7단계 | 프로젝트 마무리, 최종 발표 및 수료</span>
-                <span class="phase-toggle-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
-              </button>
-              <div class="phase-body" style="display:none">
-                <div class="phase-item-list"><div class="phase-item-row"><span class="phase-item-bullet"></span><span class="phase-item-text">프로젝트 최종 완성, 발표 및 수료식</span></div></div>
+            <div class="curriculum-card">
+              <div class="curriculum-card-header">
+                <button class="curriculum-toggle-btn" onclick="toggleCurriculum(this)" aria-expanded="false">
+                  <div class="curriculum-question-container">
+                    <span class="curriculum-week">7개월</span>
+                    <span class="curriculum-title">프로젝트 마무리, 최종 발표 및 수료</span>
+                  </div>
+                  <span class="curriculum-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </button>
+              </div>
+              <div class="curriculum-card-body" style="display:none">
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">실무 통합 프로젝트</span>
+                    <span class="curriculum-content-desc">Azure, KT클라우드와 코드 기반 인프라 자동화 도구를 통합하여 복합 클라우드 인프라 솔루션을 구축합니다. 고가용성, 재해 복구 및 비용 관리 솔루션을 설계하며 타 과정과 협업하여 모든 요소가 결합된 통합 프로젝트를 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">특강6</span>
+                    <span class="curriculum-content-desc">매월 기업 연사 또는 전문가를 초빙하여 클라우드 인프라와 관련된 사례 및 심화 주제를 다루는 특강을 진행합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">취업 준비 역량 테스트 대비</span>
+                    <span class="curriculum-content-desc">매월 과정 별 역량 평가 및 피드백을 진행합니다. 이를 바탕으로 최신 구직 동향 및 사례를 연구하며, 자기 PR을 위한 효과적인 취업 전략을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">이력서 작성 및 자기 PR</span>
+                    <span class="curriculum-content-desc">이력서를 통해 강점을 부각시키고 자기 PR 전략을 활용하여 자신을 효과적으로 표현하는 방법을 학습합니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">프로젝트 발표회</span>
+                    <span class="curriculum-content-desc">프로젝트의 결과물을 발표하고, 심사위원과 현직자로부터 피드백을 받아 전체적인 성과와 구현 과정을 평가받습니다.</span>
+                  </div>
+                </div>
+                <div class="curriculum-item">
+                  <span class="curriculum-dot"></span>
+                  <div>
+                    <span class="curriculum-content-title">수료식</span>
+                    <span class="curriculum-content-desc">7개월 간의 학습과 프로젝트를 마무리하며, 수료식을 통해 교육 과정에 대한 회고와 향후 계획을 공유합니다.</span>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -358,7 +650,7 @@
       </div>
       <div class="container">
         <div class="sketch-more-link">
-          <a href="https://ktcloud-techup.com" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
+          <a href="https://ktcloud-techup-cohort1-outcomes.pages.dev/" target="_blank" rel="noopener noreferrer">현직자 멘토링부터 해커톤까지, 1기 스케치 보기 →</a>
         </div>
       </div>
     </div>
