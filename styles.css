@@ -460,4 +460,75 @@ ul { list-style: none; }
   .tuition-banner-inline { flex-direction: column; align-items: flex-start; padding: 16px 20px; }
   .tuition-inline-btn { width: 100%; text-align: center; }
   .detail-nav-section { top: 57px; }
+  .career-card-grid { grid-template-columns: 1fr; }
+  .career-feature-grid { grid-template-columns: 1fr; }
+  .career-support-grid { grid-template-columns: 1fr; }
+  .process-timeline { gap: 0; }
+  .sketch-gallery { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ===== SECTION HEADING 2 LINES ===== */
+.section-heading-2line {
+  font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; line-height: 1.35;
+  color: #fff; margin-bottom: 40px;
+}
+
+/* ===== CURRICULUM ACCORDION ===== */
+.curriculum-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.curriculum-phase-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 32px; }
+.phase-item { background: #16171c; border-radius: 12px; overflow: hidden; }
+.phase-toggle {
+  width: 100%; padding: 20px 24px; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left;
+}
+.phase-toggle-title { font-size: .9rem; font-weight: 700; color: #fff; }
+.phase-toggle-icon { color: rgba(255,255,255,.4); flex-shrink: 0; transition: transform .2s; }
+.phase-body { display: none; padding: 0 24px 20px; }
+.phase-body.open { display: block; }
+.phase-item-list { display: flex; flex-direction: column; gap: 8px; padding-left: 4px; }
+.phase-item-row { display: flex; gap: 10px; align-items: flex-start; }
+.phase-item-bullet { width: 6px; height: 6px; border-radius: 50%; background: #3b82f6; flex-shrink: 0; margin-top: 7px; }
+.phase-item-text { font-size: .85rem; color: rgba(255,255,255,.65); line-height: 1.65; }
+
+/* ===== CAREER CARDS ===== */
+.career-section-divider { height: 1px; background: rgba(255,255,255,.07); margin: 60px 0; }
+.career-card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 0; }
+.career-card { background: #16171c; border-radius: 16px; padding: 28px; }
+.career-card-large { grid-column: span 1; }
+.career-card-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.career-card-title { font-size: .95rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.career-card-desc { font-size: .85rem; color: rgba(255,255,255,.55); line-height: 1.7; }
+.career-feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.career-feature-card { background: #16171c; border-radius: 16px; padding: 28px; }
+.career-feature-title { font-size: .95rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+.career-feature-desc { font-size: .85rem; color: rgba(255,255,255,.55); line-height: 1.7; margin-bottom: 14px; }
+.feature-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.feature-tag { font-size: .75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px; background: rgba(220,38,38,.15); color: #f87171; }
+.career-support-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.career-support-card { background: #16171c; border-radius: 16px; padding: 24px; }
+.support-icon { font-size: 1.5rem; margin-bottom: 10px; }
+.support-title { font-size: .875rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.support-desc { font-size: .8rem; color: rgba(255,255,255,.5); line-height: 1.65; }
+
+/* ===== PROCESS TIMELINE ===== */
+.process-timeline-title { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; line-height: 1.35; color: #fff; margin-bottom: 40px; }
+.process-timeline { display: flex; flex-direction: column; gap: 0; }
+.process-timeline-item {
+  display: grid; grid-template-columns: 80px 1fr;
+  padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.07);
+  align-items: start; gap: 24px;
+}
+.process-timeline-item:last-of-type { border-bottom: none; }
+.timeline-num { font-size: .85rem; font-weight: 700; color: #ef4444; }
+.timeline-content {}
+.timeline-step-title { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.timeline-step-date { font-size: .9rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.timeline-step-desc { font-size: .85rem; color: rgba(255,255,255,.5); }
+.process-note { font-size: .8rem; color: rgba(255,255,255,.35); margin-top: 24px; line-height: 1.8; }
+
+/* ===== SKETCH GALLERY ===== */
+.sketch-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+.sketch-gallery img { width: 100%; border-radius: 12px; aspect-ratio: 4/3; object-fit: cover; }
+.sketch-more-link { text-align: center; margin-top: 8px; }
+.sketch-more-link a { font-size: .9rem; color: #ef4444; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+.sketch-more-link a:hover { opacity: .8; }
