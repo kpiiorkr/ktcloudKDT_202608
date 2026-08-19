@@ -31,3 +31,7 @@ GitHub Pages 기준:
 - 메인페이지의 지원 확인 버튼 제거
 - 모든 지원 CTA를 동일한 신청 폼으로 통일
 - `/frontend` 직접 접근 가능한 정적 페이지 추가
+
+---
+
+> 사이트 배포 URL 예시: `https://<username>.github.io/ktcloudKDT_202608/`
