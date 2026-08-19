@@ -111,7 +111,8 @@
           <button class="nav-item-btn" onclick="scrollToSection('faq',this)">자주 묻는 질문</button>
         </nav>
       </div>
-        <section class="introduce-section" id="introduce_detail">
+  </section>
+  <section class="introduce-section" id="introduce">
       <div class="container">
         <h2 class="introduce-section-title">보이지 않는 위험을 막고<br>신뢰를 지키는 보안 역량</h2>
         <div class="content-grid">
@@ -138,9 +139,9 @@
           </div>
         </div>
       </div>
-    </section>
-    </section>
-        <div class="section-block" id="curriculum">
+  </section>
+
+  <div class="section-block" id="curriculum">
       <div class="container">
         <div class="curriculum-header">
           <h2 class="section-heading-2line">단계별 학습 설계로<br>탄탄하게 쌓는 커리큘럼</h2>
@@ -352,6 +353,7 @@
     function toggleFaq(btn){var a=btn.nextElementSibling,ic=btn.querySelector(".faq-icon svg"),o=a.style.display!=="none";a.style.display=o?"none":"block";if(ic)ic.style.transform=o?"":"rotate(180deg)";}
     function switchFaqTab(tab,btn){["recruit","training","card"].forEach(function(t){document.getElementById("faq-"+t).style.display=t===tab?"":"none";});document.querySelectorAll(".faq-nav-btn").forEach(function(b){b.classList.remove("active");});btn.classList.add("active");}
     function scrollToSection(id,btn){var el=document.getElementById(id);if(el){window.scrollTo({top:el.offsetTop-130,behavior:"smooth"});}document.querySelectorAll(".nav-item-btn").forEach(function(b){b.classList.remove("active");});btn.classList.add("active");}
+    function togglePhase(btn){var body=btn.nextElementSibling;var icon=btn.querySelector(".phase-toggle-icon svg");var open=body.style.display!=="none";body.style.display=open?"none":"block";if(icon)icon.style.transform=open?"":"rotate(180deg)";}
   </script>
 </body>
 </html>
