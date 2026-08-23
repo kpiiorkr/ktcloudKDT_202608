@@ -718,9 +718,10 @@
     function switchFaqTab(tab,btn){["recruit","training","card"].forEach(function(t){document.getElementById("faq-"+t).style.display=t===tab?"":"none";});document.querySelectorAll(".faq-nav-btn").forEach(function(b){b.classList.remove("active");});btn.classList.add("active");}
     function scrollToSection(id,btn){var el=document.getElementById(id);if(el){window.scrollTo({top:el.offsetTop-130,behavior:"smooth"});}document.querySelectorAll(".nav-item-btn").forEach(function(b){b.classList.remove("active");});btn.classList.add("active");}
     function togglePhase(btn){var body=btn.nextElementSibling;var icon=btn.querySelector(".phase-toggle-icon svg");var open=body.style.display!=="none";body.style.display=open?"none":"block";if(icon)icon.style.transform=open?"":"rotate(180deg)";}
-  </script>
+      function toggleCurriculum(btn){var card=btn.closest('.curriculum-card');var body=card.querySelector('.curriculum-card-body');var parent=card.closest('.curriculum-column');var allCards=parent.querySelectorAll('.curriculum-card');var isOpen=btn.getAttribute('aria-expanded')==='true';allCards.forEach(c=>{var b=c.querySelector('.curriculum-card-body');var curBtn=c.querySelector('.curriculum-toggle-btn');if(c!==card){curBtn.setAttribute('aria-expanded','false');if(b)b.style.display='none';}});btn.setAttribute('aria-expanded',isOpen?'false':'true');if(body)body.style.display=isOpen?'none':'block';}</script>
 </body>
 </html>
+
 
 
 
