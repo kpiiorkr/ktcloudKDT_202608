@@ -62,6 +62,7 @@ ul { list-style: none; }
   z-index: 100;
   padding: 16px;
 }
+.header-dropdown.open { display: block !important; }
 .header-menu-item:hover .header-dropdown,
 .header-menu-item:focus-within .header-dropdown { display: block !important; }
 .dropdown-item {

@@ -502,6 +502,47 @@
       var el = document.getElementById(id);
       if (el) el.classList.toggle('open');
     }
+
+    // 헤더 메뉴 고정 기능
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuItems = document.querySelectorAll('.header-menu-item');
+      
+      menuItems.forEach(item => {
+        const btn = item.querySelector('.header-menu-btn');
+        const dropdown = item.querySelector('.header-dropdown');
+        
+        if (!btn || !dropdown) return;
+        
+        let dropdownOpen = false;
+        
+        // 버튼 클릭: 메뉴 토글
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          dropdownOpen = !dropdownOpen;
+          if (dropdownOpen) {
+            dropdown.classList.add('open');
+            btn.classList.add('open');
+          } else {
+            dropdown.classList.remove('open');
+            btn.classList.remove('open');
+          }
+        });
+        
+        // 메뉴 항목에 호버 진입: 메뉴 표시
+        item.addEventListener('mouseenter', function() {
+          dropdown.classList.add('open');
+          btn.classList.add('open');
+        });
+        
+        // 메뉴 항목에서 호버 이탈: 버튼 클릭으로 열린 상태가 아니면 닫기
+        item.addEventListener('mouseleave', function() {
+          if (!dropdownOpen) {
+            dropdown.classList.remove('open');
+            btn.classList.remove('open');
+          }
+        });
+      });
+    });
   </script>
 </body>
 </html>
