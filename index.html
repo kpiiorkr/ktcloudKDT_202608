@@ -522,12 +522,12 @@
           btn.classList.add('open');
         });
         
-        // 메뉴 항목에서 호버 이탈: 2초 후 메뉴 숨김
+        // 메뉴 항목에서 호버 이탈: 1초 후 메뉴 숨김
         item.addEventListener('mouseleave', function() {
           closeTimer = setTimeout(function() {
             dropdown.classList.remove('open');
             btn.classList.remove('open');
-          }, 2000);
+          }, 1000);
         });
       });
     });
