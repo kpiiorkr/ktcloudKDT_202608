@@ -503,7 +503,7 @@
       if (el) el.classList.toggle('open');
     }
 
-    // 헤더 메뉴 hover 시 표시 기능
+    // 헤더 메뉴 hover 시 표시 + 지연 닫기
     document.addEventListener('DOMContentLoaded', function() {
       const menuItems = document.querySelectorAll('.header-menu-item');
       
@@ -513,16 +513,21 @@
         
         if (!btn || !dropdown) return;
         
-        // 메뉴 항목에 호버 진입: 메뉴 표시
+        let closeTimer = null;
+        
+        // 메뉴 항목에 호버 진입: 메뉴 표시 + 타이머 취소
         item.addEventListener('mouseenter', function() {
+          if (closeTimer) clearTimeout(closeTimer);
           dropdown.classList.add('open');
           btn.classList.add('open');
         });
         
-        // 메뉴 항목에서 호버 이탈: 메뉴 숨김
+        // 메뉴 항목에서 호버 이탈: 2초 후 메뉴 숨김
         item.addEventListener('mouseleave', function() {
-          dropdown.classList.remove('open');
-          btn.classList.remove('open');
+          closeTimer = setTimeout(function() {
+            dropdown.classList.remove('open');
+            btn.classList.remove('open');
+          }, 2000);
         });
       });
     });
