@@ -725,28 +725,14 @@
         var allBodies = column.querySelectorAll('.curriculum-card-body');
         var allBtns = column.querySelectorAll('.curriculum-toggle-btn');
         
-        allBodies.forEach(function(b) { b.style.display = 'none !important'; });
+        allBodies.forEach(function(b) { b.style.cssText = 'display: none !important;'; });
         allBtns.forEach(function(b) { b.setAttribute('aria-expanded', 'false'); });
         
         body.style.cssText = 'display: block !important;';
         btn.setAttribute('aria-expanded', 'true');
       }</script>
-function initAccordions() {
-  const buttons = document.querySelectorAll('.curriculum-toggle-btn');
-  buttons.forEach(btn => {
-    btn.setAttribute('aria-expanded', 'false');
-    const body = btn.closest('.curriculum-column').querySelector('.curriculum-card-body');
-    if (body) {
-      body.style.display = 'none !important';
-      body.style.cssText = 'display: none !important;';
-    }
-  });
-}
-window.addEventListener('DOMContentLoaded', initAccordions);
 </body>
 </html>
-
-
 
 
 
